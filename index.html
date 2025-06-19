@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClubTrack - Football Club Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ClubTrack</h1>
+    <nav>
+      <ul>
+        <li><a href="#players">Players</a></li>
+        <li><a href="#uniforms">Uniforms</a></li>
+        <li><a href="#finance">Finance</a></li>
+        <li><a href="#management">Management</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Players Section -->
+    <section id="players">
+      <h2>Players</h2>
+      <form id="player-form">
+        <input type="text" id="player-name" placeholder="Name" required />
+        <input type="number" id="player-age" placeholder="Age" required />
+        <input type="text" id="player-position" placeholder="Position" required />
+        <input type="number" id="jersey-number" placeholder="Jersey #" required />
+        <button type="submit">Add Player</button>
+      </form>
+      <div id="player-cards" class="card-container"></div>
+    </section>
+
+    <!-- Uniforms Section -->
+    <section id="uniforms">
+      <h2>Uniform Inventory</h2>
+      <form id="uniform-form">
+        <input type="text" id="uniform-size" placeholder="Size (e.g., M, L)" required />
+        <input type="number" id="uniform-count" placeholder="Count" required />
+        <button type="submit">Add to Inventory</button>
+      </form>
+      <ul id="uniform-list"></ul>
+    </section>
+
+    <!-- Finance Section -->
+    <section id="finance">
+      <h2>Finance</h2>
+      <form id="finance-form">
+        <input type="text" id="transaction-name" placeholder="Income/Expense Title" required />
+        <input type="number" id="transaction-amount" placeholder="Amount" required />
+        <select id="transaction-type">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+        <button type="submit">Record Transaction</button>
+      </form>
+      <div id="finance-summary">
+        <p>Total Income: <span id="total-income">KES 0</span></p>
+        <p>Total Expenses: <span id="total-expenses">KES 0</span></p>
+        <p>Balance: <span id="balance">KES 0</span></p>
+      </div>
+      <ul id="finance-history"></ul>
+    </section>
+
+    <!-- Management Section -->
+    <section id="management">
+      <h2>Management Team</h2>
+      <form id="management-form">
+        <input type="text" id="manager-name" placeholder="Full Name" required />
+        <input type="text" id="manager-role" placeholder="Role (e.g. Coach, Treasurer)" required />
+        <input type="text" id="manager-contact" placeholder="Contact Info" required />
+        <button type="submit">Add Official</button>
+      </form>
+      <ul id="management-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ClubTrack. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
