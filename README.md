@@ -51,7 +51,7 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/clubtrack.git
+git clone https://github.com/amos-kipkorir/TULWET-FOOTBALL-CLUB-MANAGER.git
 cd clubtrack
 ```
 
@@ -87,12 +87,6 @@ json-server --watch db.json
 ```
 
 Visit: `http://localhost:3000`
-
----
-
-## 📌 Future Enhancements
-
-*
 
 ---
 
